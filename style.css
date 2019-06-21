@@ -1,0 +1,84 @@
+/**********
+Base Selectors
+**********/
+body {
+    text-align: center;
+}
+
+fieldset {
+    border: solid #6FB382;
+}
+
+legend, #genButton {
+    color: #6FB382;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+legend {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 5px #94FFA6;
+}
+
+#genButton {
+    font-size: 14px;
+    background-color: #94FFA6;
+}
+
+
+/**********
+Attribute/Pseudo-class Selectors and Combinators
+**********/
+:root {
+    background-image: linear-gradient(lightgray, white);
+    height: 100%; /*Otherwise gradient ends up repeating*/
+}
+
+input[type="checkbox"]:checked + label[for="prefix"] {
+    font-weight: bold;
+}
+
+#prefix_menu option:nth-child(2n + 2) {
+    background: #94FFA6;
+}
+
+#prefix_menu option:nth-child(2n + 1) {
+    background: #FFADBE;
+}
+
+
+/**********
+Media Queries
+**********/
+@media (min-width: 730px) {
+    fieldset {
+        max-width:730px;
+        margin: 0 auto;
+    }
+    
+    .checkDiv {
+        float:left;
+        margin-left: 20%;
+        margin-bottom: 10px;
+    }
+    
+    .prefixDiv {
+        margin-right: 8%;
+        margin-top: 2px;
+    }
+    
+    .yourDiv {
+        float: left;
+        margin-left: 8%;
+    }
+    
+    #genButton {
+        margin-top: 10px;
+    }
+    
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}

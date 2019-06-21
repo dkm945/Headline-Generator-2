@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Clickbait Headline Generator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="index.html" method="get">
+            <h2>Clickbait Headline Generator</h2>
+            <fieldset>
+                <legend>Generator inputs</legend>
+                <div class="checkDiv clearfix">
+                    <input type="checkbox" id="checkbox" value="prefix-select" name="optional_prefix">
+                    <label for="prefix">Select to include a prefix</label>
+                </div>
+                <div class="prefixDiv clearfix">
+                    <label for="prefix_menu">Prefix Selection:</label>
+                    <select id="prefix_menu">
+                        <option value="1">BOOM!</option>
+                        <option value="2">WOW!</option>
+                        <option value="3">EPIC!</option>
+                        <option value="4">OMG!</option>
+                        <option value="5">WINNING!</option>
+                        <option value="6">LOL!</option>
+                    </select>
+                </div>
+                <div class="yourDiv clearfix">
+                    <label for="yourname">Your name:</label>
+                    <input type="text" id="yourname">
+                </div>
+                <div class="otherDiv clearfix">
+                    <label for="othername">Another person's name:</label>
+                    <input type="text" id="othername">
+                </div>
+                <button type="button" id="genButton">Generate!</button>
+            </fieldset>
+        </form>
+        <p></p>
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="jq-script.js"></script>
+    </body>
+</html>
